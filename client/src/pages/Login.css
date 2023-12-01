@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.typewriter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80%;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-label {
+    margin: 15px 10px;
+}
+
+.user-details[type="text"], .react-select__control {
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 6px;
+    margin: 10px 0;
+    background-color: rgba(85, 85, 85, 0.3);
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.user-details input[type="text"]::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(0, 0%, 20%);
+    font-size: 16px;
+}
+
+.user-details[type="password"], .react-select__control {
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 6px;
+    margin: 10px 0;
+    background-color: rgba(85, 85, 85, 0.3);
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.user-details input[type="password"]::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(0, 0%, 20%);
+    font-size: 16px;
+}
+
+.submit-form {
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-form {
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.submit-form:hover {
+    background-color: #0056b3;
+}
+
+.submit-form.processing {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+input.user-details:-webkit-autofill,
+input.user-details:-webkit-autofill:hover,
+input.user-details:-webkit-autofill:focus,
+input.user-details:-webkit-autofill:active {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.view-password-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    color: white;
+}
+
+.view-password-button svg {
+    color: white;
+}
+
+.error-message {
+    display: block;
+    position: absolute;
+    color: red;
+    font-size: 12px;
+}
+
+

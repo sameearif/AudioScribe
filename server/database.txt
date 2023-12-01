@@ -1,0 +1,29 @@
+CREATE TABLE login (
+    id INT NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255) NOT NULL,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    type VARCHAR(5) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE audios (
+    id INT NOT NULL AUTO_INCREMENT,
+    path VARCHAR(255) NOT NULL,
+    url VARCHAR(255) NOT NULL UNIQUE,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE audio_segments (
+    id INT NOT NULL AUTO_INCREMENT,
+    audio_name INT NOT NULL,
+    username VARCHAR(255) NOT NULL,
+    transcription VARCHAR(1024) NOT NULL,
+    start_time FLOAT NOT NULL,
+    end_time FLOAT NOT NULL,
+    done TINYINT(1) DEFAULT 0, 
+    delete_audio TINYINT(1) DEFAULT 0, 
+    PRIMARY KEY (id)
+);
+
+INSERT INTO login (name, username, password, type) VALUES ("Samee Arif", "sameearif", "", "admin");

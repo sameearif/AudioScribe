@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+.transparent-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background: transparent;
+    transition: all 0.5s ease;
+}
+
+.navbar-logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar-logo img {
+    width: 25px;
+    height: auto;
+}
+
+.transparent-navbar h1, .transparent-navbar ul a {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.links-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.transparent-navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.transparent-navbar ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: white;
+}
+
+.transparent-navbar ul li a:hover {
+    color: #007BFF;
+}
+
+.transparent-navbar ul.nav-links li a.active {
+    color: #007BFF;
+}
+
+
+.logout-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.logout-btn:hover {
+    border-color: red;
+    color: red;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    color: white;
+}
+
+.hamburger-menu:hover {
+    color: #007BFF;
+}
+
+.transparent-navbar .hamburger-container {
+    position: relative;
+}
+
+.transparent-navbar .links-container .nav-dropdown {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    opacity: 0.9;
+}
+
+.transparent-navbar .links-container .nav-dropdown.open {
+    transition: all 0.5s ease;
+    transform: translateY(0);
+}
+
+.transparent-navbar .links-container .nav-dropdown.close {
+    transform: translateY(-100);
+    transition: all 0.5s ease;
+}
+
+.transparent-navbar .links-container .nav-dropdown a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.transparent-navbar .links-container .nav-dropdown a:hover {
+    color: #007BFF;
+}
+
+.transparent-navbar .links-container .nav-dropdown a.active {
+    color: #007BFF;
+}
+
+.transparent-navbar .links-container .nav-dropdown .close-menu {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 3rem;
+    color: white;
+}
+
+.transparent-navbar .links-container .nav-dropdown .close-menu:hover {
+    color: red;
+}
+
+.logout-btn-dropdown {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+.logout-btn-dropdown:hover {
+    border-color: red;
+    color: red;
+}
+
+@media screen and (max-width: 1100px) {
+    .transparent-navbar ul.nav-links {
+        transition: all 0.5s ease;
+        display: none;
+    }
+    
+    .logout-btn {
+        transition: all 0.5s ease;
+        display: none;
+    }
+
+    .hamburger-menu {
+        transition: all 0.5s ease;
+        display: block;
+    }
+
+    .transparent-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 40px;
+        background: transparent;
+        transition: all 0.5s ease;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .transparent-navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background: transparent;
+        font-size: 12px;
+        transition: all 0.5s ease;
+    }
+}
+
